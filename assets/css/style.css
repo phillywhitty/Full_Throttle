@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+
 body {
-    background-color: aqua;
+    background: url(/assets/images/full_throttle_bg_img.png) no-repeat center;
+    background-size: cover;
+    height: 120vh;
+    max-width: 100%;
+   
 }
