@@ -1,15 +1,31 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Titillium+Web:wght@700&display=swap');
 
 
 
-body {
-    background: url(/assets/images/full_throttle_bg_img.png) no-repeat center;
-    background-size: cover;
-    height: 120vh;
-    max-width: 100%;
-   
-} */
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     border: none;
+ }
+
+
+
+ body {
+     /* background: url(/assets/images/full_throttle_bg_img.png) no-repeat center; */
+     background-size: cover;
+ }
+
+
+ h1 {
+     font-family: 'Lilita';
+     font-size: 5rem;
+     color: black;
+     text-align: center;
+ }
+
+ .quiz-area {
+     background-color: red;
+     width: 80%;
+ }

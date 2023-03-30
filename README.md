@@ -1,108 +1,89 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Full Trottle
 
-Welcome phillywhitty,
+ Full Trottle will be targeted toward people who not only love motorsport but those who also like more advanced JavaScript concepts. Full Trottle is a fully responsive JavaScript quiz game that will allow users to answer a range of Formula 1 questions in order to recieve a score.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsice Mockup](Am I Responsive Img)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __Full Trottle Heading__
 
-`python3 -m http.server`
+  - Featured at the top of the page, the Full Trottle logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-A blue button should appear to click: _Make Public_,
+![Logo](Heading Img)
 
-Another blue button should appear to click: _Open Browser_.
+- __The Quiz Area__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - This section will allow the user to play the quiz game. The user will be able to easily see the start quiz button for a serious of questions to follow.
+  - 
 
-A blue button should appear to click: _Make Public_,
+![Quiz](Start Button Img)
 
-Another blue button should appear to click: _Open Browser_.
+- __The Score Area__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
 
-To log into the Heroku toolbelt CLI:
+![score](Score-area img)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+For some/all of your features, you may choose to reference the specific project files that implement them.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-------
+### Features Left to Implement
 
-## Release History
+- Another feature idea
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Testing 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Validator Testing 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- HTML
+    - No errors were returned when passing through the official [W3C validator](link here)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](Link here)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 11 functions in this file.
+      - Function with the largest signature takes 2 arguments, while the median is 0.
+      - Largest function has 10 statements in it, while the median is 3.
+      - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Unfixed Bugs
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Deployment
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- Log in to your GitHub account. navigate to (link for project)
+- You can set up your own repository and copy or clone it, or you fork the repository.
+- Git add, git commit and git push to a GitHub repository, if necessary.
+- GitHub pages will update from the master branch by default.
+- Go to the Settings page of the repository.
+- Scroll down to the Github Pages section.
+- Select the Master Branch as the source and Confirm the selection.
+- Wait a minute or two and it should be live for viewing. See my own here.
+ 
+The live link can be found here - (live link)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Credits 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Content 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- 
+- 
+- 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Media
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- 
+- 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Other General Project Advice
