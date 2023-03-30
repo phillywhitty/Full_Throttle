@@ -67,7 +67,7 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 - Select the Master Branch as the source and Confirm the selection.
 - Wait a minute or two and it should be live for viewing. See my own here.
  
-The live link can be found here - (live link)
+The live link can be found here - (https://phillywhitty.github.io/Full_Throttle/)
 
 ## Credits 
 
