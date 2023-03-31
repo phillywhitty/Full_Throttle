@@ -4,6 +4,16 @@
 
 ![Responsice Mockup](Am I Responsive Img)
 
+
+## Design
+
+### Wireframes
+
+Wireframes were created for mobile, tablet and desktop using balsamiq.
+
+![Home Page](assets/images/start_page_wireframes.png)
+
+
 ## Features 
 
 ### Existing Features
