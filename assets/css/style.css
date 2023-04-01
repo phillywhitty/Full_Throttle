@@ -1,57 +1,79 @@
- @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Titillium+Web:wght@700&display=swap');
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
 
- * {
-     margin: 0;
-     padding: 0;
-     border: none;
- }
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
 
+h1 {
+    font-size: 5.4rem;
+    color: blue;
+    margin-bottom: 5rem;
 
- body {
-     /* background: url(/assets/images/full_throttle_bg_img.png) no-repeat center; */
-     background-size: cover;
- }
+}
 
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
 
- h1 {
-     font-family: 'Lilita', sans-serif;
-     font-size: 5rem;
-     color: white;
-     text-align: center;
- }
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
 
- .quiz-area {
-     background-color: grey;
-     opacity: 0.8;
-     width: 50%;
-     margin: 0 auto;
-     padding: 3rem;
-     color: black;
-     text-align: center;
- }
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
 
- .start-area {
+/* UTILITIES */
 
-     text-align: center;
- }
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
 
- .score-area {
-     text-align: center;
-     font-family: 'Lilita', sans-serif;
-     font-weight: 500;
-     font-size: 3rem;
-     padding-bottom: 2rem;
-     background-color: aqua;
- }
+.container>* {
+    width: 100%;
+}
 
- .start-btn {
-     font-family: Lilita, sans-serif;
-     font-size: 2rem;
-     font-weight: 400;
-     padding: 0.75rem 0;
-     background-color: antiquewhite;
-     border: black;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+.flex-column {
+    display: flex;
+}
 
- }
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
