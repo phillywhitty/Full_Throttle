@@ -58,9 +58,9 @@ h3 {
     width: 100%;
 }
 
-.flex-column {
+/* .flex-column {
     display: flex;
-}
+} */
 
 .flex-center {
     justify-content: center;
