@@ -6,3 +6,17 @@
     border: 0.1rem solid rgba(86, 165, 235, 0.25);
     background-color: aqua;
 }
+
+.choice-container:hover {
+    cursor: pointer;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(72, 49, 183, 0.25);
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem
+}
