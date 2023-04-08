@@ -20,7 +20,13 @@ let currentQuestion = {};
 // Define a boolean flag to indicate whether answers are being accepted
 let acceptingAnswers = false;
 
-//Quiz Questions
+// Define a constant for the bonus awarded for a correct answer
+const CORRECT_BONUS = 1;
+
+// Define a constant for the maximum number of questions in the quiz
+const MAX_QUESTIONS = 10;
+
+//Quiz Questions.
 let questions = [
     {
         question:
