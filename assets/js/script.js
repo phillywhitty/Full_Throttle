@@ -92,6 +92,25 @@ let questions = [
         choice4: "Alain Prost",
         answer: 2,
     },
+
+    {
+        question: " What is the current land speed record for a car ?",
+        choice1: " 483 mph",
+        choice2: "617 mph",
+        choice3: "763 mph ",
+        choice4: " 1,227 mph",
+        answer: 4,
+    },
+
+    {
+        question:
+            "What do you get when you put a car and a mosquito together ?",
+        choice1: "A fast and furious bug",
+        choice2: "A car that always needs its windshield wipers",
+        choice3: "A drive-in movie theater",
+        choice4: "A bug that's always buzzing around your ear",
+        answer: 1,
+    },
 ];
 
 // FUNCTIONS //
