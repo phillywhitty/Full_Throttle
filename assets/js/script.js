@@ -1,3 +1,25 @@
+// Define a reference to the HTML element with id "question"
+const question = document.getElementById("question");
+
+// Use the querySelectorAll method to find all HTML elements with class "choice-text",
+// and convert the resulting NodeList into an array using the spread operator
+const choices = [...document.querySelectorAll(".choice-text")];
+
+// Define a variable to track the user's score
+let score = 0;
+
+// Define a variable to track the current question number
+let questionCounter = 0;
+
+// Define an array to store the available questions
+let availableQuesions = [];
+
+// Define an empty object for the current question
+let currentQuestion = {};
+
+// Define a boolean flag to indicate whether answers are being accepted
+let acceptingAnswers = false;
+
 //Quiz Questions
 let questions = [
     {
