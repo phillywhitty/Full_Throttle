@@ -111,6 +111,16 @@ let questions = [
         choice4: "A bug that's always buzzing around your ear",
         answer: 1,
     },
+
+    {
+        question:
+            "Which of these animals is considered to be the fastest land animal ?",
+        choice1: " African wild dog",
+        choice2: "Cheetah",
+        choice3: "Siberian tiger",
+        choice4: "American black bear",
+        answer: 2,
+    },
 ];
 
 // FUNCTIONS //
