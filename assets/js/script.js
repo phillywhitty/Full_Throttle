@@ -82,6 +82,16 @@ let questions = [
         choice4: "1966",
         answer: 1,
     },
+
+    {
+        question:
+            " Which Formula One driver has won the most World Championships to date?",
+        choice1: "Ayrton Senna",
+        choice2: "Michael Schumacher",
+        choice3: "Lewis Hamilton",
+        choice4: "Alain Prost",
+        answer: 2,
+    },
 ];
 
 // FUNCTIONS //
