@@ -73,6 +73,15 @@ let questions = [
         choice4: "203mph",
         answer: 2,
     },
+
+    {
+        question: "Which year did the first Isle of Man TT race take place ? ",
+        choice1: "1907",
+        choice2: "1922",
+        choice3: "1935",
+        choice4: "1966",
+        answer: 1,
+    },
 ];
 
 // FUNCTIONS //
