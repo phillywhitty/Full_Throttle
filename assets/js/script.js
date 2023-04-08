@@ -126,6 +126,7 @@ let questions = [
 // FUNCTIONS //
 
 // Define a function to start the game
+
 function startGame() {
     // Reset the question counter to 0
     questionCounter = 0;
@@ -140,3 +141,27 @@ function startGame() {
     // Get a new question and display it to the user
     getNewQuestion();
 }
+
+function getNewQuestion() {
+    // Check if there are no more available questions or the maximum number of questions has been reached.
+    // If either of these conditions are true, it means that the game should end and we need to redirect the user to the end page.
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        // Redirect to the end page
+        return window.location.assign("end.html");
+    }
+
+    // Increase the question counter by 1
+    questionCounter = questionCounter + 1;
+}
+
+// Find a random index within the available questions array
+const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+
+// Get the current question object from the available questions array using the random index
+let selectedQuestion = availableQuesions[questionIndex];
+
+// Set the text of the question element to the text of the current question object
+question.innerText = currentQuestion.question;
+
+// Note: These three lines of code together select a random question from the available questions array and display it to the user.
+// I had to use a reference from youtube on what way to approach a random question function. Here is the link - (https://www.youtube.com/watch?v=zZdQGs62cR8&t=472s).
