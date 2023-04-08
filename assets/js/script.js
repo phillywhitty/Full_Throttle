@@ -26,11 +26,11 @@ const CORRECT_BONUS = 1;
 // Define a constant for the maximum number of questions in the quiz
 const MAX_QUESTIONS = 10;
 
-//Quiz Questions.
+// QUIZ QUESTIONS //
 let questions = [
     {
         question:
-            "The modern F1 Championship started in 1950. On which track was the first race held?",
+            "The modern F1 Championship started in 1950. On which track was the first race held ?",
         choice1: "Bahrain Circuit",
         choice2: "Shanghai Circuit",
         choice3: "Silverstone",
@@ -39,7 +39,7 @@ let questions = [
     },
 
     {
-        question: "Who is the only Dutch driver to have won a F1 Grand Prix?",
+        question: "Who is the only Dutch driver to have won a F1 Grand Prix ?",
         choice1: "Gijs van Lennep",
         choice2: "Huub Rothengatter",
         choice3: "Jan Lammers",
@@ -48,7 +48,7 @@ let questions = [
     },
 
     {
-        question: "World Rally Car engines have how many cylinders?",
+        question: "World Rally Car engines have how many cylinders ?",
         choice1: "2",
         choice2: "4",
         choice3: "6",
@@ -57,14 +57,25 @@ let questions = [
     },
 
     {
-        question: "In rally racing, what does the co-driver do?",
+        question: "In rally racing, what does the co-driver do ?",
         choice1: "Sits there for the pure fun of it",
         choice2: "Communicates back to the rally team",
         choice3: "Assists the driver using navigation notes",
         choice4: "Changes the radio station for the driver",
         answer: 3,
     },
+
+    {
+        question: "What is the highest official speed ever reached in MotoGP ?",
+        choice1: "120mph",
+        choice2: "217mph",
+        choice3: "102mph",
+        choice4: "203mph",
+        answer: 2,
+    },
 ];
+
+// FUNCTIONS //
 
 // Define a function to start the game
 function startGame() {
