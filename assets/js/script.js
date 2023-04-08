@@ -65,3 +65,19 @@ let questions = [
         answer: 3,
     },
 ];
+
+// Define a function to start the game
+function startGame() {
+    // Reset the question counter to 0
+    questionCounter = 0;
+
+    // Reset the user's score to 0
+    score = 0;
+
+    // Create a new array of available questions by copying the original array
+    // This is done using the slice() method to create a new array with the same elements
+    availableQuesions = questions.slice();
+
+    // Get a new question and display it to the user
+    getNewQuestion();
+}
