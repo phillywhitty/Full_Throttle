@@ -192,12 +192,12 @@ const selectedAnswer = selectedChoice.dataset["number"];
 // Set a variable to hold the class to apply based on whether the answer is correct or incorrect
 let classToApply;
 
-// Check if the selected answer is correct
+// If the selected answer is correct
 if (selectedAnswer == currentQuestion.answer) {
-  // If so, set the class to "correct"
+  // Sets the class to "correct" and change background to green
   classToApply = "correct";
 } else {
-  // Otherwise, set the class to "incorrect"
+  // Otherwise, set the class to "incorrect" and change background to red
   classToApply = "incorrect";
 }
 
