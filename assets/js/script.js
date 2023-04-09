@@ -189,17 +189,30 @@ const selectedChoice = e.target;
 // Get the answer number from the selected choice element's dataset
 const selectedAnswer = selectedChoice.dataset["number"];
 
+// Set a variable to hold the class to apply based on whether the answer is correct or incorrect
+let classToApply;
 
-    const classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+// Check if the selected answer is correct
+if (selectedAnswer == currentQuestion.answer) {
+  // If so, set the class to "correct"
+  classToApply = "correct";
+} else {
+  // Otherwise, set the class to "incorrect"
+  classToApply = "incorrect";
+}
 
-    selectedChoice.parentElement.classList.add(classToApply);
 
-    setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    }, 1000);
-  });
+// Add a class to the selected choice's parent element to show whether the answer was correct or incorrect
+selectedChoice.parentElement.classList.add(classToApply);
+
+// Wait 1 second and then remove the class from the selected choice's parent element and get a new question
+setTimeout(() => {
+  selectedChoice.parentElement.classList.remove(classToApply);
+  getNewQuestion();
+}, 1000);
+
 });
+});
+ 
 
 startGame();
