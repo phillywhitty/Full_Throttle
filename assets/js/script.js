@@ -1,29 +1,29 @@
-// Define a reference to the HTML element with id "question"
-const question = document.getElementById("question");
+// A reference to the HTML element with id "question"
+const question = document.getElementById('question');
 
-// Use the querySelectorAll method to find all HTML elements with class "choice-text",
+// The querySelectorAll method to find all HTML elements with class "choice-text",
 // and convert the resulting NodeList into an array using the spread operator
-const choices = [...document.querySelectorAll(".choice-text")];
+const choices = [...document.querySelectorAll('.choice-text')];
 
-// Define a variable to track the user's score
+// A variable to track the user's score
 let score = 0;
 
-// Define a variable to track the current question number
+// A variable to track the current question number
 let questionCounter = 0;
 
-// Define an array to store the available questions
+// An array to store the available questions
 let availableQuesions = [];
 
-// Define an empty object for the current question
+// An empty object for the current question
 let currentQuestion = {};
 
-// Define a boolean flag to indicate whether answers are being accepted
+// A boolean flag to indicate whether answers are being accepted
 let acceptingAnswers = false;
 
-// Define a constant for the bonus awarded for a correct answer
+// A constant for the bonus awarded for a correct answer
 const CORRECT_BONUS = 1;
 
-// Define a constant for the maximum number of questions in the quiz
+// A constant for the maximum number of questions in the quiz
 const MAX_QUESTIONS = 10;
 
 // QUIZ QUESTIONS //
@@ -125,17 +125,15 @@ let questions = [
 
 // FUNCTIONS //
 
-// Define a function to start the game
+// Function to start the game
 
-function startGame() {
-    // Reset the question counter to 0
+startGame = () => {
+    // Reset the question counter and the users score to 0
     questionCounter = 0;
-
-    // Reset the user's score to 0
     score = 0;
 
     // Create a new array of available questions by copying the original array
-    // This is done using the slice() method to create a new array with the same elements
+    // This is done using the slice method to create a new array with the same elements
     availableQuesions = questions.slice();
 
     // Get a new question and display it to the user
@@ -152,7 +150,7 @@ function getNewQuestion() {
 
     // Increase the question counter by 1
     questionCounter = questionCounter + 1;
-}
+
 
 // Find a random index within the available questions array
 const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -161,7 +159,23 @@ const questionIndex = Math.floor(Math.random() * availableQuesions.length);
 let selectedQuestion = availableQuesions[questionIndex];
 
 // Set the text of the question element to the text of the current question object
-question.innerText = currentQuestion.question;
+question.innerText = currentQuestion.question; 
 
 // Note: These three lines of code together select a random question from the available questions array and display it to the user.
 // I had to use a reference from youtube on what way to approach a random question function. Here is the link - (https://www.youtube.com/watch?v=zZdQGs62cR8&t=472s).
+
+choices.forEach((choice) => {
+    const number = choice.dataset['number'];
+    choice.innerText = currentQuestion['choice' + number];
+
+});
+
+// Remove the current question from the available questions array
+availableQuesions.splice(questionIndex, 1);
+
+// Set the acceptingAnswers flag to true, which allows the user to select an answer
+acceptingAnswers = true;
+
+}
+
+
