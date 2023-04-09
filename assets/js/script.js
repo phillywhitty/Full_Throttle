@@ -214,5 +214,5 @@ setTimeout(() => {
 });
 });
  
-
+// This code will be executed one all other functions are defined 
 startGame();
