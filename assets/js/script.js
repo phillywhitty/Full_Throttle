@@ -140,42 +140,58 @@ startGame = () => {
     getNewQuestion();
 }
 
+// This function gets a new question
 function getNewQuestion() {
-    // Check if there are no more available questions or the maximum number of questions has been reached.
-    // If either of these conditions are true, it means that the game should end and we need to redirect the user to the end page.
+    // Check if there are any available questions left or if the maximum number of questions has been reached
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        // Redirect to the end page
-        return window.location.assign("end.html");
+    // If there are no available questions or the maximum number of questions has been reached, redirect to the end page
+    return window.location.assign("/end.html");
     }
+    // Increment the question counter
+    questionCounter++;
+    // Generate a random index for the question
+    const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+    // Get the current question using the randomly generated index
+    currentQuestion = availableQuesions[questionIndex];
+    // Set the question text to be the current question's question property
+    question.innerText = currentQuestion.question;
+    
 
-    // Increase the question counter by 1
-    questionCounter = questionCounter + 1;
+// Iterate over each choice element
+choices.forEach(choice => {
+    // Get the choice's number attribute
+    const number = choice.dataset["number"];
+    // Set the choice's text to be the corresponding choice from the current question
+    choice.innerText = currentQuestion["choice" + number];
+  });
+  
+  // Remove the current question from the available questions array
+  availableQuesions.splice(questionIndex, 1);
+  
+  // Allow the user to select an answer
+  acceptingAnswers = true;
+  };
 
 
-// Find a random index within the available questions array
-const questionIndex = Math.floor(Math.random() * availableQuesions.length);
 
-// Get the current question object from the available questions array using the random index
-let selectedQuestion = availableQuesions[questionIndex];
+choices.forEach(choice => {
+  choice.addEventListener("click", e => {
+    if (!acceptingAnswers) return;
 
-// Set the text of the question element to the text of the current question object
-question.innerText = currentQuestion.question; 
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
 
-// Note: These three lines of code together select a random question from the available questions array and display it to the user.
-// I had to use a reference from youtube on what way to approach a random question function. Here is the link - (https://www.youtube.com/watch?v=zZdQGs62cR8&t=472s).
+    const classToApply =
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-choices.forEach((choice) => {
-    const number = choice.dataset['number'];
-    choice.innerText = currentQuestion['choice' + number];
+    selectedChoice.parentElement.classList.add(classToApply);
 
+    setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1000);
+  });
 });
 
-// Remove the current question from the available questions array
-availableQuesions.splice(questionIndex, 1);
-
-// Set the acceptingAnswers flag to true, which allows the user to select an answer
-acceptingAnswers = true;
-
-}
-
-
+startGame();
