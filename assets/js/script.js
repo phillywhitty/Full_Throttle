@@ -5,6 +5,9 @@ const question = document.getElementById('question');
 // and convert the resulting NodeList into an array using the spread operator
 const choices = [...document.querySelectorAll('.choice-text')];
 
+
+const scoreText = document.getElementById("score");
+
 // A variable to track the user's score
 let score = 0;
 
@@ -200,6 +203,12 @@ if (selectedAnswer == currentQuestion.answer) {
   // Otherwise, set the class to "incorrect" and change background to red
   classToApply = "incorrect";
 }
+// Check if the class to apply is "correct"
+if (classToApply === "correct") {
+    // If so, increment the score by the correct bonus amount
+    incrementScore(CORRECT_BONUS);
+  }
+  
 
 
 // Add a class to the selected choice's parent element to show whether the answer was correct or incorrect
@@ -213,6 +222,14 @@ setTimeout(() => {
 
 });
 });
+
+// A function that increments the score by a given amount
+incrementScore = num => {
+    // Add the given amount to the score variable
+    score += num;
+    // Updates the text of the score element to display the new score
+    scoreText.innerText = score;
+  };
  
 // This code will be executed one all other functions are defined 
 startGame();
