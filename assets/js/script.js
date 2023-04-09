@@ -173,14 +173,22 @@ choices.forEach(choice => {
   };
 
 
-
+ // Iterate over each choice element
 choices.forEach(choice => {
-  choice.addEventListener("click", e => {
-    if (!acceptingAnswers) return;
+    // A click event listener to the choice element
+    choice.addEventListener("click", e => {
+      // If the user isn't currently allowed to select an answer, return early and don't do anything
+      if (!acceptingAnswers) return;
 
-    acceptingAnswers = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+  // Set acceptingAnswers to false, so the user can't select another answer until we tell them
+acceptingAnswers = false;
+
+// Get the choice element that the user clicked on
+const selectedChoice = e.target;
+
+// Get the answer number from the selected choice element's dataset
+const selectedAnswer = selectedChoice.dataset["number"];
+
 
     const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
