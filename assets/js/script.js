@@ -5,7 +5,7 @@ const question = document.getElementById('question');
 // and convert the resulting NodeList into an array using the spread operator
 const choices = [...document.querySelectorAll('.choice-text')];
 
-
+// Assign a variable and retrieving score ID
 const scoreText = document.getElementById("score");
 
 // A variable to track the user's score
@@ -215,19 +215,21 @@ if (classToApply === "correct") {
 selectedChoice.parentElement.classList.add(classToApply);
 
 // Wait 1 second and then remove the class from the selected choice's parent element and get a new question
-setTimeout(() => {
-  selectedChoice.parentElement.classList.remove(classToApply);
-  getNewQuestion();
-}, 1000);
-
+// Wait for one second before removing the class and getting a new question
+setTimeout(function() {
+    selectedChoice.parentElement.classList.remove(classToApply);
+    getNewQuestion();
+  }, 1000);
+  
 });
 });
 
-// A function that increments the score by a given amount
-incrementScore = num => {
-    // Add the given amount to the score variable
+/* A function that increments the score by a given amount
+   It then gives the amount to the score variable and
+   updates the text of the score element to display the new score */
+
+   incrementScore = num => {
     score += num;
-    // Updates the text of the score element to display the new score
     scoreText.innerText = score;
   };
  
