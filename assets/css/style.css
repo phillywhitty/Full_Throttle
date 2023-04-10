@@ -11,6 +11,13 @@
     color: #333;
 }
 
+body {
+    background-image: url(/assets/images/full_throttle_main-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
 /* HEADINGS */
 
 h1,
@@ -65,6 +72,7 @@ h3 {
 .center-column {
     justify-content: center;
     align-items: center;
+    display: grid;
 }
 
 .justify-center {
