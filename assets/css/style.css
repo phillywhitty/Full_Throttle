@@ -11,6 +11,8 @@
     color: #333;
 }
 
+/* HEADINGS */
+
 h1,
 h2,
 h3,
@@ -41,7 +43,7 @@ h3 {
     font-weight: 500;
 }
 
-/* UTILITIES */
+/* MAIN FUNCTIONS */
 
 .container {
     width: 100vw;
@@ -58,11 +60,9 @@ h3 {
     width: 100%;
 }
 
-/* .flex-column {
-    display: flex;
-} */
+/* COLUMNS */
 
-.flex-center {
+.center-column {
     justify-content: center;
     align-items: center;
 }
@@ -79,7 +79,7 @@ h3 {
     display: none;
 }
 
-/* buttons */
+/* BUTTONS */
 
 .btn {
     font-size: 1.8rem;
@@ -107,7 +107,9 @@ h3 {
     transform: none;
 }
 
-.choice-container {
+/* ANSWER/CHOICES */
+
+.answer-container {
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
@@ -116,11 +118,11 @@ h3 {
     background-color: aqua;
 }
 
-.choice-container:hover {
+.answer-container:hover {
     cursor: pointer;
 }
 
-.choice-prefix {
+.answer-attach {
     padding: 1.5rem 2.5rem;
     background-color: rgba(72, 49, 183, 0.25);
     color: white;
@@ -139,18 +141,18 @@ h3 {
     background-color: red;
 }
 
-/* HUD */
+/* DISPLAYS */
 
-#hud {
+#display {
     display: flex;
     justify-content: space-between;
 }
 
-.hud-prefix {
+.display-attach {
     text-align: center;
     font-size: 2rem;
 }
 
-.hud-main-text {
+.display-main-text {
     text-align: center;
 }
