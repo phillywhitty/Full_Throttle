@@ -5,6 +5,7 @@ const question = document.getElementById("question");
    and convert the resulting NodeList into an array using the spread operator. */
 const choices = [...document.querySelectorAll(".choice-text")];
 
+/* This line of code retrieves an HTML element with the ID of "questionCounter */
 const questionCounterText = document.getElementById('questionCounter');
 
 /* A variable to retrieve score ID.
