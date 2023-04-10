@@ -1,33 +1,27 @@
-// A reference to the HTML element with id "question"
+/* A reference to the HTML element with id "question" */
 const question = document.getElementById("question");
 
-// The querySelectorAll method to find all HTML elements with class "choice-text",
-// and convert the resulting NodeList into an array using the spread operator
+/* The querySelectorAll method to find all HTML elements with class "choice-text"
+   and convert the resulting NodeList into an array using the spread operator */
 const choices = [...document.querySelectorAll(".choice-text")];
 
-// Assign a variable and retrieving score ID
+/* A variable to retrieve score ID
+Tracking the user's score
+Tracking the current question number
+An array to store the available questions
+An empty object for the current question */
 const scoreText = document.getElementById("score");
-
-// A variable to track the user's score
 let score = 0;
-
-// A variable to track the current question number
 let questionCounter = 0;
-
-// An array to store the available questions
 let availableQuesions = [];
-
-// An empty object for the current question
 let currentQuestion = {};
 
-// A boolean flag to indicate whether answers are being accepted
+// A boolean to indicate whether answers are being accepted
 let acceptingAnswers = false;
 
-// A constant for the bonus awarded for a correct answer
-const CORRECT_BONUS = 1;
-
-// A constant for the maximum number of questions in the quiz
-const MAX_QUESTIONS = 10;
+// A constant for the bonus awarded for a correct answer & max questions for the quiz
+const EXACT_BONUS = 1;
+const QUESTIONS_LIMIT = 10;
 
 // QUIZ QUESTIONS //
 let questions = [
@@ -144,24 +138,26 @@ startGame = () => {
 /* If there are no available questions or the maximum number of questions has been reached, redirect to the end page */
 
 function getNewQuestion() {
-  if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (availableQuesions.length === 0 || questionCounter >= QUESTIONS_LIMIT) {
     return window.location.assign("/end.html");
   }
 
-  // Increment the question counter
+  /* Increment the question counter 
+  Generate a random index for the question
+  Get the current question using the randomly generated index
+  Set the question text to be the current question's question property
+  */
   questionCounter++;
-  // Generate a random index for the question
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-  // Get the current question using the randomly generated index
   currentQuestion = availableQuesions[questionIndex];
-  // Set the question text to be the current question's question property
   question.innerText = currentQuestion.question;
 
-  // Iterate over each choice element
+  // FUNCTION FOR SELECTING MY ANSWERS/CHOICES //
+  /* Repeats over each choice element
+     Get the choice's number attribute
+     Set the choice's text to be the corresponding choice from the current question */
   choices.forEach((choice) => {
-    // Get the choice's number attribute
     const number = choice.dataset["number"];
-    // Set the choice's text to be the corresponding choice from the current question
     choice.innerText = currentQuestion["choice" + number];
   });
 
@@ -172,11 +168,13 @@ function getNewQuestion() {
   acceptingAnswers = true;
 }
 
-// Iterate over each choice element
+/* Iterate over each choice element 
+   A click event listener to the choice element
+   If the user isn't currently allowed to select an answer, return early and don't do anything
+
+*/
 choices.forEach((choice) => {
-  // A click event listener to the choice element
   choice.addEventListener("click", (e) => {
-    // If the user isn't currently allowed to select an answer, return early and don't do anything
     if (!acceptingAnswers) return;
 
     /* Set acceptingAnswers to false, so the user can't select another answer until I tell them
@@ -186,16 +184,15 @@ choices.forEach((choice) => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-    let classToApply;
 
     //FUNCTION FOR STYLING BACKGROUNDS & ICREMENTING SCORE//
 
-    /*Sets the class to "correct" and changes background to green
+    /* Sets the class to "correct" and changes background to green
   Otherwise, it sets the class to "incorrect" and change background to red
   It then checks if the class to apply is "correct"
   If so, it increments the score by 1 to the correct bonus amount
 
-*/
+*/ let classToApply;
     if (selectedAnswer == currentQuestion.answer) {
       classToApply = "correct";
     } else {
@@ -203,14 +200,15 @@ choices.forEach((choice) => {
     }
 
     if (classToApply === "correct") {
-      incrementScore(CORRECT_BONUS);
+      incrementScore(EXACT_BONUS);
     }
 
     // Add a class to the selected choice's parent element to show whether the answer was correct or incorrect
     selectedChoice.parentElement.classList.add(classToApply);
 
-    // Wait 1 second and then remove the class from the selected choice's parent element and get a new question
-    // Wait for one second before removing the class and getting a new question
+    // TIMEOUT FUNCTION //
+    /* Wait 1 second and then remove the class from the selected choice's parent element and get a new question
+       Wait for one second before removing the class and getting a new question */
 
     setTimeout(function () {
       selectedChoice.parentElement.classList.remove(classToApply);
@@ -218,7 +216,7 @@ choices.forEach((choice) => {
     }, 1000);
   });
 });
-
+// INCREMENT SCORE FUNCTION //
 /* A function that increments the score by 1.
    It then gives the amount(1) to the score variable and
    updates the text of the score element to display the new score */
@@ -228,5 +226,5 @@ incrementScore = (num) => {
   scoreText.innerText = score;
 };
 
-// This code will be executed one all other functions are defined
+// This code will be executed once all other functions are defined
 startGame();
