@@ -170,10 +170,9 @@ function getNewQuestion() {
 
 /* Iterate over each choice element 
    A click event listener to the choice element
-   If the user isn't currently allowed to select an answer, return early and don't do anything
+   If the user isn't currently allowed to select an answer, return early and don't do anything */
 
-*/
-choices.forEach((choice) => {
+  choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
 
@@ -187,7 +186,7 @@ choices.forEach((choice) => {
 
     //FUNCTION FOR STYLING BACKGROUNDS & ICREMENTING SCORE//
 
-    /* Sets the class to "correct" and changes background to green
+  /* Sets the class to "correct" and changes background to green
   Otherwise, it sets the class to "incorrect" and change background to red
   It then checks if the class to apply is "correct"
   If so, it increments the score by 1 to the correct bonus amount
