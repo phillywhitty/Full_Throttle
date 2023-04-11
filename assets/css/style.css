@@ -1,6 +1,7 @@
 :root {
     background-color: #ecf5ff;
     font-size: 62.5%;
+    color: black;
 }
 
 * {
@@ -76,7 +77,7 @@ h3 {
 }
 
 #window {
-    background-color: lightgoldenrodyellow;
+  background-color: #56a5eb;
 }
 
 /* COLUMNS */
