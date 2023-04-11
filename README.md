@@ -1,6 +1,6 @@
 # Full Trottle
 
- Full Trottle will be targeted toward people who not only love motorsport but those who also like more advanced JavaScript concepts. Full Trottle is a fully responsive JavaScript quiz game that will allow users to answer a range of Formula 1 questions in order to recieve a score.
+ Full Throttle will be targeted toward people who not only love motorsport but those who also like more advanced JavaScript concepts. Full Throttle is a fully responsive JavaScript quiz game that will allow users to answer a range of Formula 1 questions in order to recieve a score.
 
 ![Responsice Mockup](Am I Responsive Img)
 
