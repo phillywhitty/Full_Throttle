@@ -43,7 +43,8 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+- I was hoping to add in my score leaderboard for the quiz. I went through it with guidance and a youtube video but soon released that it seem
+quite alot to take on board with the deadline coming up so my mentor suggested I focused on more basic functions and really come to grips with undertanding my project.
 
 ## Testing 
 
@@ -66,8 +67,9 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
-
+There was an issue with my end.html file path that I had to leave unfixed due to the project time deadline. Everything was working fine on the broswer from my workspace.
+The live link from github was showing a 404.error page just on my end.html file. The same thing happened to my background image so I changed the file path to a relative path for github. I also did the
+same for my end.html and I taught the issue would have been resolved. Unfortunately I would have liked to dive into this issue further as it should have been an easy fix.
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -84,14 +86,14 @@ The live link can be found here - (https://phillywhitty.github.io/Full_Throttle/
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+- I also found my mentor Rory Fitzpatrick so supportive and he had me focused on the important elements and gave me confidence to get stuck into Javascript.
+- I had the support of a friend who is a senior developer, he broke down some of the functions so I gained a deeper understanding of the Javascript.
 
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
-- 
-- 
+- I found James Q Quirks video on youtube a big help especially to structure the choice questions with javascript.
+- I used all my images from Canva as I installed the pro version
 - 
 
 ### Media
