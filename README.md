@@ -26,20 +26,17 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 - __The Quiz Area__
 
-  - This section will allow the user to play the quiz game. The user will be able to easily see the start quiz button for a serious of questions to follow.
+  - This is the main quiz section. It provide a user with 10 questions and they have a selection of 4 answers per question.
   - 
 
 ![Quiz](./assets/images/quiz_area_img.png)
 
 - __The Score Area__
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
+  - This section will allow the user to see exactly how many correct answers they have provided. It will also let the user see what question they are currently on.
 
 ![score](./assets/images/score_area_img.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
@@ -87,7 +84,7 @@ The live link can be found here - (https://phillywhitty.github.io/Full_Throttle/
 ## Credits 
 
 - I also found my mentor Rory Fitzpatrick so supportive and he had me focused on the important elements and gave me confidence to get stuck into Javascript.
-- I had the support of a friend who is a senior developer, he broke down some of the functions so I gained a deeper understanding of the Javascript.
+- I had the support of a friend called Michael Howlin who is a senior developer, he broke down some of the functions so I gained a deeper understanding of the Javascript.
 
 
 ### Content 
@@ -96,9 +93,3 @@ The live link can be found here - (https://phillywhitty.github.io/Full_Throttle/
 - I used all my images from Canva as I installed the pro version
 - 
 
-### Media
-
-- 
-- 
-
-## Other General Project Advice
