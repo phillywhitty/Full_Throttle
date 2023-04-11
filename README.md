@@ -35,7 +35,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
   - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
 
-![score](Score-area img)
+![score](./assets/images/score_area_img.png)
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
