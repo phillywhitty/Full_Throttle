@@ -61,6 +61,9 @@ In addition, you may also use this section to discuss plans for additional featu
       - Largest function has 12 statements in it, while the median is 2.
       - The most complex function has a cyclomatic complexity value of 4 while the median is 1.
 
+- Lighthouse Results
+ ![Lighhouse](./assets/images/lighthouse_testing.png)
+
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
