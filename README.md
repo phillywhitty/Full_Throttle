@@ -22,7 +22,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
   - This section will allow a user to Start the Full Throttle Quiz where they can test their motorsport knowledge.
 
-![Logo](./assets/images/start_section_img_readme.png)
+![Logo](./assets/images/start_page_img.png)
 
 - __The Quiz Area__
 
