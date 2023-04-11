@@ -11,7 +11,7 @@
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-![Home Page](assets/images/start_page_wireframes.png)
+![Home Page](./assets/images/am_i_responsive_img.png)
 
 
 ## Features 
