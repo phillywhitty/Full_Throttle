@@ -145,7 +145,7 @@ startGame = () => {
 
 function getNewQuestion() {
   if (availableQuesions.length === 0 || questionCounter >= QUESTIONS_LIMIT) {
-    return window.location.assign("end.html");
+    return window.location.assign("/end.html");
   }
 
   /* Increment the question counter 
