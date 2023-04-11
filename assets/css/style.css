@@ -1,5 +1,9 @@
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
 :root {
     background-color: #ecf5ff;
+    font-family:'Titillium Web', sans-serif; 
     font-size: 62.5%;
     color: black;
 }
@@ -29,6 +33,7 @@ h4 {
 }
 
 h1 {
+    font-family:'Titillium Web', sans-serif;
     font-size: 4rem;
     color: black;
     margin-bottom: 5rem;
@@ -42,6 +47,7 @@ h1 > span {
 }
 
 h2 {
+    font-family: 'Titillium Web', sans-serif; 
     font-size: 4.2rem;
     margin-bottom: 4rem;
     font-weight: 700;
@@ -53,6 +59,7 @@ h3 {
 }
 
 #home-par {
+    font-family: 'Titillium Web', sans-serif; 
     font-size: 2.8rem;
     font-weight: 500;
     text-align: center;
@@ -77,8 +84,9 @@ h3 {
 }
 
 #window {
-  background-color: #56a5eb;
-  opacity:0.
+  background-color: white;
+  opacity:0.8;
+  border-radius: 1.5rem;
 }
 
 /* COLUMNS */
@@ -108,10 +116,11 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
-    margin-bottom: 1rem;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+    margin-bottom: 10rem;
     text-decoration: none;
-    color: red;
+    color: black;
     background-color: white;
     align-items: center;
     display: flex;
@@ -120,7 +129,7 @@ h3 {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 darkgreen;
 }
 
 .btn[disabled]:hover {
@@ -130,6 +139,7 @@ h3 {
 }
 
 /* ANSWER/CHOICES */
+
 
 .answer-container {
     display: flex;
@@ -151,6 +161,7 @@ h3 {
 }
 
 .choice-text {
+    font-family:'Titillium Web', sans-serif; 
     padding: 1.5rem;
     width: 100%;
 }
