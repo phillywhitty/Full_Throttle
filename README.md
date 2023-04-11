@@ -29,7 +29,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
   - This section will allow the user to play the quiz game. The user will be able to easily see the start quiz button for a serious of questions to follow.
   - 
 
-![Quiz](Start Button Img)
+![Quiz](./assets/images/quiz_area_img.png)
 
 - __The Score Area__
 
